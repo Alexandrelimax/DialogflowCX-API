@@ -9,6 +9,7 @@ LOCATION = os.getenv('AGENT_DISPLAY_NAME')
 AGENT_DISPLAY_NAME = os.getenv('AGENT_DISPLAY_NAME')
 LANGUAGE = os.getenv('LANGUAGE')
 TIME_ZONE = os.getenv('TIME_ZONE')
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'service_account.json'
 
 FLOW_DISPLAY_NAME_BOOK = "Reservar Voo"
 FLOW_DISPLAY_NAME_CANCEL = "Cancelar Voo"
